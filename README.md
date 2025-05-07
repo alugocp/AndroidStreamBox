@@ -1,7 +1,7 @@
-# Pillbug
+# Android Stream Box
 This is a phone screen share hack I threw together for any server that runs Arch Linux (i.e. Raspberry Pi).
 I use it to replace my proprietary streaming box.
-It uses [AndroidScreenCaster](https://github.com/magicsih/AndroidScreenCaster).
+It uses [AndroidScreenCaster](https://github.com/alugocp/AndroidScreenCaster).
 
 ## Helpful Arch commands
 Resize the root filesystem partition:
