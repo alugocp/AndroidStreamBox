@@ -1,4 +1,4 @@
-# Home Server Smart TV Setup
+# Android Stream Box
 This repo helps you setup a Linux device to act as a smart TV controller.
 It uses [scrcpy](https://github.com/Genymobile/scrcpy) to mirror your phone screen onto your TV.
 Gone are the days of buggy Xfinity boxes that paywall content!
