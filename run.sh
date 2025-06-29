@@ -5,4 +5,4 @@ xdotool mousemove 0 0
 # Open scrcpy
 VERSION="v3.3.1"
 SCRCPY="scrcpy-linux-x86_64-$VERSION"
-$HOME/scrcpy/$SCRCPY/scrcpy -f -t -w
+systemd-inhibit --what=sleep:idle $HOME/scrcpy/$SCRCPY/scrcpy -f -t -w
