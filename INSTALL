@@ -4,7 +4,6 @@ echo "Installing scripts..."
 DST="$HOME/scrcpy"
 mkdir "$DST"
 sudo cp run.sh "$DST/run.sh"
-sudo cp scrcpy.rules /etc/udev/rules.d/scrcpy.rules
 
 # Download scrcpy
 echo "Downloading scrcpy..."
