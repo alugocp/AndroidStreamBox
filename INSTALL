@@ -1,0 +1,20 @@
+#!/bin/bash
+# Install the runner script
+echo "Installing scripts..."
+DST="$HOME/scrcpy"
+mkdir "$DST"
+sudo cp run.sh "$DST/run.sh"
+sudo cp scrcpy.rules /etc/udev/rules.d/scrcpy.rules
+
+# Download scrcpy
+echo "Downloading scrcpy..."
+VERSION="v3.3.1"
+SCRCPY="scrcpy-linux-x86_64-$VERSION"
+wget "https://github.com/Genymobile/scrcpy/releases/download/$VERSION/$SCRCPY.tar.gz" -O "$DST/$SCRCPY.tar.gz"
+tar -xvzf "$DST/$SCRCPY.tar.gz" -C "$DST"
+
+# Output message
+echo "All done!"
+echo ""
+echo "Now create a custom keyboard shortcut that runs the following command:"
+echo "$HOME/scrcpy/run.sh"
